@@ -31,7 +31,7 @@ export class BotFrameworkConfig extends DialogServiceConfigImpl {
      */
     public static fromSubscription(subscription: string, region: string, botId?: string): BotFrameworkConfig {
         Contracts.throwIfNullOrWhitespace(subscription, "subscription");
-        Contracts.throwIfNullOrWhitespace(region, "region");
+        Contracts.throwIfNullOrWhitespace(region, "westeurope");
 
         const botFrameworkConfig: BotFrameworkConfig = new DialogServiceConfigImpl();
         botFrameworkConfig.setProperty(
